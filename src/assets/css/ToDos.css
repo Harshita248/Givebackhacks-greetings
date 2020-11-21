@@ -1,0 +1,98 @@
+.todo-app h1
+{
+    background: #1360ef;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight:normal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo-app ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.todo-app li
+{
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+}
+
+.todo-app li:nth-child(2n)
+{
+    background: #f7f7f7;
+}
+
+.todo-app span
+{
+    background: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0px;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.todo-app li:hover span
+{
+    width: 40px;
+    opacity: 1.0;
+}
+
+.todo-app input
+{
+    font-size: 18px;
+    background: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    color: #2980b9;
+    font-weight: normal;
+    border: 3px solid rgba(0, 0, 0, 0);
+    display: none;
+}
+
+.todo-app input:focus
+{
+    background: white;
+    border: 3px solid #2980b9;
+}
+
+.todo-app ::placeholder
+{
+    color: rgba(128, 128, 128, 1);
+    font-weight: normal;
+
+}
+
+
+.todo-app#container
+{
+    width: 360px;
+    margin: 100px auto;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)
+}
+
+.todo-app .completed
+{
+    color: gray;
+    text-decoration: line-through;
+}
+
+input.display-input{
+    display: block;
+}
