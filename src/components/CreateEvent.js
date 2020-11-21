@@ -6,7 +6,9 @@ import '../assets/css/theme.min.css';
 import '../assets/css/ToDos.css'
 import { FaPlus, FaTrashAlt } from 'react-icons/fa';
 
-const Blog = () => {
+const CreateEvent = () => {
+    document.title = "Create Event"
+
     const [todoList, setTodoList] = useState([]);
     const [todoInput, setTodoInput] = useState('');
     const [addItemIput, setAddItemIput] = useState(true)
@@ -44,8 +46,8 @@ const Blog = () => {
     return (
         <>
             <div id="container" className="todo-app">
-                <h1>To-Do list <FaPlus className="fa-plus" onClick={() => setAddItemIput(!addItemIput)} /></h1>
-                <input type="text" className={addItemIput ? `display-input` : ''} placeholder="Add New ToDo" onKeyPress={addItemtoList} value={todoInput} onChange={(e) => setTodoInput(e.target.value)} />
+                <h1>Create Event <FaPlus className="fa-plus" onClick={() => setAddItemIput(!addItemIput)} /></h1>
+                <input type="text" className={addItemIput ? `display-input` : ''} placeholder="Add New Event" onKeyPress={addItemtoList} value={todoInput} onChange={(e) => setTodoInput(e.target.value)} />
                 <ul>
                     {todoList.map(item => {
                         return <li key={item.id} className={item.isCompleted ? `completed` : ''} onClick={() => setIsCompleted(item.id)}>
@@ -61,4 +63,4 @@ const Blog = () => {
     )
 }
 
-export default Blog
+export default CreateEvent

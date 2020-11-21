@@ -27,9 +27,7 @@ const Navbar = () => {
                                         <ul className="navbar-nav ml-auto">
                                             <li className="nav-item dropdown"> <a href="/">Home</a>
                                             </li>
-                                            <li className="nav-item dropdown"> <a href="/blog">Create Event</a>
-                                            </li>
-                                            <li className="nav-item dropdown"> <a href="work.html">Features</a>
+                                            <li className="nav-item dropdown"> <a href="/create-event">Create Event</a>
                                             </li>
                                             <li className="nav-item dropdown"> <a href="/card-generator">Card Generator</a>
                                             </li>

@@ -1,6 +1,7 @@
-import Blog from './components/Blog'
+import CreateEvent from './components/CreateEvent'
 import Navbar from './components/Navbar'
 import Cardgenerator from './components/Cardgenerator'
+import Home from './components/Home'
 
 import {
   BrowserRouter as Router,
@@ -15,15 +16,15 @@ function App() {
       <Navbar />
 
       <Switch>
-        <Route path="/blog">
-          <Blog />
+        <Route path="/create-event">
+          <CreateEvent />
         </Route>
         <Route path="/card-generator">
           <Cardgenerator />
         </Route>
         <Route path="/">
-          home
-          </Route>
+          <Home />
+        </Route>
       </Switch>
     </Router>
 

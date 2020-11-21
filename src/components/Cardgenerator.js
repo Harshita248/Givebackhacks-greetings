@@ -2,6 +2,8 @@ import React, { useState, useRef } from 'react'
 import '../assets/css/card-generator.css'
 
 const Cardgenerator = () => {
+    document.title = "Card Generator"
+
     const [receiversName, setReceiversName] = useState('');
     const [message, setMessage] = useState('');
     const [sendersName, setSendersName] = useState('');
@@ -40,18 +42,17 @@ const Cardgenerator = () => {
             ctx.rect(0, 0, 300, 56);
             ctx.fill();
             ctx.fillStyle = "#fff";
-            ctx.fillText("Campus Card", 10, 25);
+            ctx.fillText("Thank You", 100, 25);
             ctx.font = "16px Arial";
-            ctx.fillText("Undergraduate", 15, 45);
             // ctx.drawImage(logo, 230, 3, 50, 50);
             ctx.fillStyle = "#fff";
             ctx.beginPath();
-            ctx.rect(0, 55, 300, 300);
+            ctx.rect(0, 35, 300, 300);
             ctx.fill()
             ctx.fillStyle = "black";
-            ctx.fillText("Receiver's Name: " + receiversName, 20, 90);
-            ctx.fillText("Message: " + message, 20, 115);
-            ctx.fillText("Sender's Name: " + sendersName, 20, 140);
+            ctx.fillText("To: " + receiversName, 20, 90);
+            ctx.fillText(message, 20, 125);
+            ctx.fillText("From: " + sendersName, 20, 165);
             // ctx.fillText("SubN° " + num.innerHTML, 110, 165);
             // ctx.drawImage(image, 10, 65, 80, 110);
         }
