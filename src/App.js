@@ -1,5 +1,7 @@
 import Blog from './components/Blog'
 import Navbar from './components/Navbar'
+import Cardgenerator from './components/Cardgenerator'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,6 +17,9 @@ function App() {
       <Switch>
         <Route path="/blog">
           <Blog />
+        </Route>
+        <Route path="/card-generator">
+          <Cardgenerator />
         </Route>
         <Route path="/">
           home

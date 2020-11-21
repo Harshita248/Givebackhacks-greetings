@@ -1,0 +1,141 @@
+.back h3{
+  color: #159;
+}
+
+.back{
+  margin-top: 2rem;
+}
+.back{
+  margin-left: 10%;
+}
+.back form{
+  width: 40%;
+  float: left;
+}
+.back .container{
+  width: 40%;
+  float: left;
+  margin-top: 3em;
+  color:#000;
+  text-align: center;
+}
+.back input, textarea{
+  display: table;
+  margin-bottom: 1em;
+  width: 60%;
+  font-size: 16px;
+  border: 2px solid #159;
+  border-radius: 5px;
+  padding: 3px;
+}
+.back #file{
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+.back .upload, button, .submit-btn{
+  color: #fff;
+  background: #159;
+  padding: 5px;
+  border: 2px solid #159;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.back form span{
+  font-size: 12px;
+}
+.back #preview{
+  font-size: 16px;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+.back #result{
+  position: relative;
+  width: 70%;
+  margin-left: 15%;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  margin-bottom: 2em;
+}
+.back header{
+  width: 100%;
+  background: #159;
+
+  border-radius: 12px 12px 0 0 ;
+}
+.back header::after{
+  content: "";
+  display: flex;
+  clear: both;
+}
+.back .camp{
+  width: 40%;
+  float: left;
+  color: #fff;
+}
+.back .camp h4{
+  margin: 12px auto 0 7px;
+}
+.back .camp span{
+  margin-left: 8px;
+}
+.back #logo{
+  width: 80px;
+  height: 80px;
+  float: right;
+}
+.back .content{
+  width: 80%;
+}
+.back .content::after{
+  content: "";
+  display: flex;
+  clear: both;
+}
+.back .content img{
+  float: left;
+  width: 80px;
+  height: 105px;
+  margin-left: 7px;
+  margin-top: 12px;
+
+}
+.back .content ul{
+  width: 50%;
+  float: left;
+  padding-left: 15px;
+}
+.back ul li{
+  list-style-type: none;
+}
+
+.back #down{
+  font-size: 18px;
+}
+/* .submit-btn{
+
+} */
+
+@media only screen and (max-width:968px) {
+  .back .container, form{
+    width: 100%;
+    margin-left: 5%;
+  }
+  .back #result{
+    margin-left: 0;
+    margin-right: 5%;
+  }
+  .back #down{
+    margin-right: 2em;
+    margin-bottom: 2em;
+    margin: 0 auto;
+  }
+  .back form{
+    width: 80%;
+  }
+  .back input,textarea{
+    width: 100%;
+  }
+
+}
